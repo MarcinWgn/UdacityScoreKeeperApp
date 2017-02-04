@@ -33,40 +33,44 @@ public class MainActivity extends AppCompatActivity {
     public void incrementCountA(View view){
         if(countA<6){
             countA++;
-            TVcountA.setText(String.valueOf(countA));
+           setTextView();
         }
     }
     public void decrementCountA(View view){
         if(countA>1){
             countA--;
-            TVcountA.setText(String.valueOf(countA));
+           setTextView();
         }
     }
     public void incrementCountB(View view){
         if(countB<6){
             countB++;
-            TVcountB.setText(String.valueOf(countB));
+            setTextView();
         }
     }
     public void decrementCountB(View view){
         if(countB>1){
             countB--;
-            TVcountB.setText(String.valueOf(countB));
+           setTextView();
         }
     }
     public void addPointsTeamA(View view){
         scoreTeamA = scoreTeamA + countA;
-        TVscoreTeamA.setText(String.valueOf(scoreTeamA));
+        setTextView();
     }
     public void addPointsTeamB(View view){
         scoreTeamB = scoreTeamB + countB;
-        TVscoreTeamB.setText(String.valueOf(scoreTeamB));
+        setTextView();
     }
     public void reset(View view){
         scoreTeamA = 0;
         scoreTeamB = 0;
         countA = 1;
         countB = 1;
+        setTextView();
+    }
+
+    private void setTextView() {
         TVcountA.setText(String.valueOf(countA));
         TVcountB.setText(String.valueOf(countB));
         TVscoreTeamA.setText(String.valueOf(scoreTeamA));
