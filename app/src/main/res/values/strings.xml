@@ -7,4 +7,6 @@
     <string name="add">add</string>
     <string name="team_a">Team A</string>
     <string name="team_b">Team B</string>
+    <string name="score_keeper">Score Keeper</string>
+    <string name="one">1</string>
 </resources>
